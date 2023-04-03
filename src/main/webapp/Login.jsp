@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<%@include file="includes/navbar.jsp" %>
+
 	<div class="container">
 		<div class="card w-50 mx-auto my-5">
 			<div class="card-header text-center">User Login</div>
