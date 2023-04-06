@@ -1,18 +1,26 @@
 package userdetails.user;
 
+import java.io.Serializable;
+
+
 public class User implements IUser{
 	
 	private int id;
+	
 	private String firstname;
+
 	private String lastname;
+	
 	private String gender;
+	
 	private String email;
+
 	private String password;
-	private String identity;
+	
 	private String mobilenum;
 	
 	public User(int id, String firstname, String lastname, String gender, String email, String password,
-			String identity, String mobilenum) {
+			 String mobilenum) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -20,7 +28,6 @@ public class User implements IUser{
 		this.gender = gender;
 		this.email = email;
 		this.password = password;
-		this.identity = identity;
 		this.mobilenum = mobilenum;
 	}
 
@@ -48,20 +55,47 @@ public class User implements IUser{
 		return password;
 	}
 
-	public String getIdentity() {
-		return identity;
-	}
+	
 
 	public String getMobilenum() {
 		return mobilenum;
 	}
 
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setMobilenum(String mobilenum) {
+		this.mobilenum = mobilenum;
+	}
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", gender=" + gender
-				+ ", email=" + email + ", password=" + password + ", identity=" + identity + ", mobilenum=" + mobilenum
-				+ "]";
+				+ ", email=" + email + ", password=" + password + ", mobilenum=" + mobilenum + "]";
 	}
+
+	
 	
 	
 	

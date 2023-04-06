@@ -8,7 +8,6 @@ public interface IUser {
 	public String getGender();
 	public String getEmail();
 	public String getPassword();
-	public String getIdentity();
 	public String getMobilenum();
 	public String toString();
 }

@@ -17,7 +17,7 @@
 			<div class="card-header text-center">User Login</div>
 			<div class="card-body">
 
-				<form action="user-Login" method="post">
+				<form action="LoginServlet" method="post">
 					<div class="form-group">
 						<label>Email Address</label> <input type="email"
 							class="form-control" name="login-email" placeholder="Enter email"

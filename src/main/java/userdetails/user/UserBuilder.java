@@ -8,7 +8,6 @@ public class UserBuilder {
 	private String gender;
 	private String email;
 	private String password;
-	private String identity;
 	private String mobilenum;
 	
 	public UserBuilder setId(int id) {
@@ -35,17 +34,14 @@ public class UserBuilder {
 		this.password = password;
 		return this;
 	}
-	public UserBuilder setIdentity(String identity) {
-		this.identity = identity;
-		return this;
-	}
+	
 	public UserBuilder setMobilenum(String mobilenum) {
 		this.mobilenum = mobilenum;
 		return this;
 	}
 	
 	public User getUser() {
-		return new User(id,firstname,lastname,gender,email,mobilenum,identity,password);
+		return new User(id,firstname,lastname,gender,email,mobilenum,password);
 	}
 	
 }

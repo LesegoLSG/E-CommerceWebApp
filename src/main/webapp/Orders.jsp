@@ -10,7 +10,7 @@
 </head>
 <body>
 <%@include file="includes/navbar.jsp" %>
-<h1>Hello world</h1>
+<h1>Orders</h1>
 
 
 <%@include file="includes/footer.jsp" %>
