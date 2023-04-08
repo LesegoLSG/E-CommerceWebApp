@@ -1,13 +1,12 @@
-package database.connection;
+package com.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DatabaseConnection {
-	
+public class DBConnection {
 	public static Connection connection = null;
-	static String url = "jdbc:mysql://localhost:3306/lessbuck_db";
+	static String url = "jdbc:mysql://localhost:3306/twiceinchdb";
 	static String uname = "root";
 	static String pass = "lesegoLSGTSI2#";
 	public static Connection getConnection() throws SQLException, ClassNotFoundException {
