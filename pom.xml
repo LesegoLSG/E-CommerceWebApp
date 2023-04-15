@@ -17,6 +17,7 @@
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<!-- Does not apply since we have the driver manually-->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>

@@ -46,7 +46,7 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body ">
 				<form>
 					<div class="row">
 						<div class="col">
@@ -58,7 +58,7 @@
 					</div>
 					<div class="row">
 						<div class="col">
-							<select class="form-control form-control-lg">
+							<select class="form-control ">
 								<option>Male</option>
 								<option>Female</option>
 							</select>
@@ -68,7 +68,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-7">
+						<div class="col">
 							<input type="text" class="form-control" placeholder="City">
 						</div>
 						

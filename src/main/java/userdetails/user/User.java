@@ -1,6 +1,6 @@
 package userdetails.user;
 
-import java.io.Serializable;
+
 
 
 public class User implements IUser{
@@ -19,6 +19,12 @@ public class User implements IUser{
 	
 	private String mobilenum;
 	
+	
+	
+	public User() {
+		super();
+	}
+
 	public User(int id, String firstname, String lastname, String gender, String email, String password,
 			 String mobilenum) {
 		super();

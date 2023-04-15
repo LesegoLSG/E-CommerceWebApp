@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.connection.DBConnection;
+import com.connection.user.UserDao;
+
+import userdetails.user.IUser;
+
 /**
  * Servlet implementation class LoginServlet
  */
@@ -33,7 +38,21 @@ public class LoginServlet extends HttpServlet {
 		response.setContentType("text/html,charset=UTF-8");
 		
 		try (PrintWriter out = response.getWriter()){
-			out.print("Working loginservlet");
+			String email = request.getParameter("login-email");
+			String password = request.getParameter("login-password");
+			
+			try {
+				UserDao userdao = new UserDao(DBConnection.getConnection());
+				IUser user = userdao.LoginValidation(email, password);
+				
+				if(user != null) {
+					out.print("User Logged in successfully");
+				}else {
+					out.print("Login failed");
+				}
+			}catch(Throwable e) {
+				e.printStackTrace();
+			}
 		}
 		
 		//response.sendRedirect("index.jsp");
