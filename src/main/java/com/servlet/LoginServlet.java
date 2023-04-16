@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 				IUser user = userdao.LoginValidation(email, password);
 				
 				if(user != null) {
-					out.print("User Logged in successfully");
+					response.sendRedirect("index.jsp");
 				}else {
 					out.print("Login failed");
 				}
