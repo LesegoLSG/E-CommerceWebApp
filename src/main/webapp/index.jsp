@@ -13,7 +13,7 @@
 <%@include file="includes/navbar.jsp" %>
 
  <h1>Index page</h1>
- <% out.print(DBConnection.getConnection()); %>
+	<%@include file="includes/LoginSession.jsp" %>
 
 <%@include file="includes/footer.jsp" %>
 </body>

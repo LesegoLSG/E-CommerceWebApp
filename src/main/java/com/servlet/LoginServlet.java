@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.connection.DBConnection;
 import com.connection.user.UserDao;
@@ -38,6 +39,7 @@ public class LoginServlet extends HttpServlet {
 		response.setContentType("text/html,charset=UTF-8");
 		
 		try (PrintWriter out = response.getWriter()){
+			//Getting login info from user
 			String email = request.getParameter("login-email");
 			String password = request.getParameter("login-password");
 			
@@ -46,9 +48,14 @@ public class LoginServlet extends HttpServlet {
 				IUser user = userdao.LoginValidation(email, password);
 				
 				if(user != null) {
+					//set session
+					HttpSession session = request.getSession();
+					session.setAttribute("auth", user);
+					//Redirect to index.jsp
 					response.sendRedirect("index.jsp");
 				}else {
-					out.print("Login failed");
+					//Redirect to Login.jsp
+					response.sendRedirect("Login.jsp");
 				}
 			}catch(Throwable e) {
 				e.printStackTrace();

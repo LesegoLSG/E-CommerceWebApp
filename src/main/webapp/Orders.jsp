@@ -11,7 +11,7 @@
 <body>
 <%@include file="includes/navbar.jsp" %>
 <h1>Orders</h1>
-
+<%@include file="includes/LoginSession.jsp" %>
 
 <%@include file="includes/footer.jsp" %>
 </body>

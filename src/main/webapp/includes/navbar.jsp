@@ -22,7 +22,7 @@
 				<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
 				<li class="nav-item active"><a class="nav-link"
 					aria-current="page" href="Login.jsp">Login</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+				<li class="nav-item"><a class="nav-link" href="./LogoutServlet">Logout</a></li>
 
 			</ul>
 
