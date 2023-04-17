@@ -1,4 +1,5 @@
-<meta charset="ISO-8859-1">
+<%@page import="userdetails.user.*"%>
+
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container">
@@ -11,19 +12,32 @@
 			aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+		<!-- Getting session since its used in our navbar -->
+    <%
+    IUser navAuthSession = (IUser) request.getSession().getAttribute("auth");
+    if(navAuthSession != null){
+    	request.setAttribute("auth", navAuthSession);
+    	
+    }
+    %>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active"><a class="nav-link"
 					aria-current="page" href="index.jsp">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
 				<li class="nav-item"><a class="nav-link" href="Cart.jsp">Cart</a></li>
+				
+				<!-- if user is not null then navbar will show Order and logout page -->
+				<% if(navAuthSession != null){ %>
 				<li class="nav-item"><a class="nav-link" href="Orders.jsp">Order</a></li>
+				<li class="nav-item"><a class="nav-link" href="./LogoutServlet">Logout</a></li>
+				
+				<%}else{ %>
 				<li class="nav-item"><a class="nav-link" href="#"
 					data-toggle="modal" data-target="#exampleModal">Register</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
 				<li class="nav-item active"><a class="nav-link"
 					aria-current="page" href="Login.jsp">Login</a></li>
-				<li class="nav-item"><a class="nav-link" href="./LogoutServlet">Logout</a></li>
-
+					<%} %>
 			</ul>
 
 		</div>

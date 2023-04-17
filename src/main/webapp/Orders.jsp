@@ -1,5 +1,8 @@
+<%@page import="userdetails.user.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+      <!-- Getting session since its used in our navbar -->
+    
 <!DOCTYPE html>
 <html>
 <head>
