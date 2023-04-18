@@ -64,34 +64,51 @@
 				<form>
 					<div class="row">
 						<div class="col">
+						<label for="exampleFormControlInput1" class="form-label">First Name</label>
 							<input type="text" class="form-control" placeholder="First name">
 						</div>
 						<div class="col">
+						<label for="exampleFormControlInput1" class="form-label">Last Name</label>
 							<input type="text" class="form-control" placeholder="Last name">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">
+						<div class="col mt-1">
+							<label for="exampleFormControlInput1" class="form-label">Gender</label>
 							<select class="form-control ">
+							<option selected>Select Gender</option>
 								<option>Male</option>
 								<option>Female</option>
 							</select>
 						</div>
-						<div class="col">
+						<div class="col mt-1">
+						<label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
 							<input type="text" class="form-control" placeholder="Contact">
 						</div>
 					</div>
+					
 					<div class="row">
-						<div class="col">
+						<div class="col mt-1">
+						<label for="exampleFormControlInput1" class="form-label">Date of Birth</label>
+							<input type="date" class="form-control" placeholder="">
+						</div>
+						
+					</div>
+					
+					<div class="row">
+						<div class="col mt-1">
+						<label for="exampleFormControlInput1" class="form-label">Postal/Physical Address</label>
 							<input type="text" class="form-control" placeholder="City">
 						</div>
 						
 					</div>
 					<div class="row">
-						<div class="col">
+						<div class="col mt-1">
+						<label for="exampleFormControlInput1" class="form-label">Email Address</label>
 							<input type="text" class="form-control" placeholder="Email">
 						</div>
-						<div class="col">
+						<div class="col mt-1">
+						<label for="exampleFormControlInput1" class="form-label">Password</label>
 							<input type="password" class="form-control" placeholder="Password">
 						</div>
 					</div>
