@@ -36,7 +36,8 @@ public class UserDao {
 			
 			if(resultSet.next()) {
 				user = new UserBuilder().setId(resultSet.getInt("id")).setFirstname("firstname").setLastname("lastname")
-												.setEmail("email").setPassword("password").setMobilenum("mobilenum").getUser();
+												.setEmail("email").setPassword("password").setMobilenum("mobilenum")
+												.setDOB("dateofbirth").setAddress("address").getUser();
 			}
 			
 		}catch(Exception e) {
