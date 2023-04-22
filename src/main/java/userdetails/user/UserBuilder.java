@@ -9,6 +9,8 @@ public class UserBuilder {
 	private String email;
 	private String password;
 	private String mobilenum;
+	private String DOB;
+	private String address;
 	
 	public UserBuilder setId(int id) {
 		this.id = id;
@@ -40,8 +42,18 @@ public class UserBuilder {
 		return this;
 	}
 	
+	public UserBuilder setDOB(String dOB) {
+		this.DOB = dOB;
+		return this;
+	}
+	
+	public UserBuilder setAddress(String address) {
+		this.address = address;
+		return this;
+	}
+	
 	public User getUser() {
-		return new User(id,firstname,lastname,gender,email,mobilenum,password);
+		return new User(id,firstname,lastname,gender,email,mobilenum,password,DOB,address);
 	}
 	
 }

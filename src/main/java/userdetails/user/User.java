@@ -4,7 +4,7 @@ package userdetails.user;
 
 
 public class User implements IUser{
-	
+	//Attributes
 	private int id;
 	
 	private String firstname;
@@ -19,14 +19,19 @@ public class User implements IUser{
 	
 	private String mobilenum;
 	
+	private String DOB;
+	
+	private String address;
 	
 	
+
+	//Augument less constructor
 	public User() {
 		super();
 	}
-
+	//Constructor with fields
 	public User(int id, String firstname, String lastname, String gender, String email, String password,
-			 String mobilenum) {
+			 String mobilenum,String DOB,String address) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -35,8 +40,11 @@ public class User implements IUser{
 		this.email = email;
 		this.password = password;
 		this.mobilenum = mobilenum;
+		this.DOB = DOB;
+		this.address = address;
 	}
-
+	
+	//Getters
 	public int getId() {
 		return id;
 	}
@@ -61,12 +69,20 @@ public class User implements IUser{
 		return password;
 	}
 
-	
-
 	public String getMobilenum() {
 		return mobilenum;
 	}
+	
+	public String getDOB() {
+		return DOB;
+	}
 
+	public String getAddress() {
+		return address;
+	}
+	
+	
+	//Setters
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -93,6 +109,14 @@ public class User implements IUser{
 
 	public void setMobilenum(String mobilenum) {
 		this.mobilenum = mobilenum;
+	}
+	
+	public void setDOB(String dOB) {
+		DOB = dOB;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	@Override

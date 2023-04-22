@@ -9,6 +9,8 @@ public interface IUser {
 	public String getEmail();
 	public String getPassword();
 	public String getMobilenum();
+	public String getDOB();
+	public String getAddress();
 	
 	public void setId(int id);
 	public void setFirstname(String firstname);
@@ -17,6 +19,8 @@ public interface IUser {
 	public void setEmail(String email);
 	public void setPassword(String password);
 	public void setMobilenum(String mobilenum);
+	public void setDOB(String dOB);
+	public void setAddress(String address);
 	
 	public String toString();
 }
