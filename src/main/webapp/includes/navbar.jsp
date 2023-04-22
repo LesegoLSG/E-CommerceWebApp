@@ -48,6 +48,7 @@
 
 
 <!-- Modal -->
+
 <div class="modal fade" id="exampleModal" tabindex="-1"
 	aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -60,22 +61,23 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
+			<form action="Registration" method="post">
 			<div class="modal-body ">
-				<form>
+				
 					<div class="row">
 						<div class="col">
 						<label for="exampleFormControlInput1" class="form-label">First Name</label>
-							<input type="text" class="form-control" placeholder="First name">
+							<input type="text" name ="firstname" class="form-control" placeholder="First name">
 						</div>
 						<div class="col">
 						<label for="exampleFormControlInput1" class="form-label">Last Name</label>
-							<input type="text" class="form-control" placeholder="Last name">
+							<input type="text" name ="lastname" class="form-control" placeholder="Last name">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col mt-1">
 							<label for="exampleFormControlInput1" class="form-label">Gender</label>
-							<select class="form-control ">
+							<select name ="gender" class="form-control ">
 							<option selected>Select Gender</option>
 								<option>Male</option>
 								<option>Female</option>
@@ -83,14 +85,14 @@
 						</div>
 						<div class="col mt-1">
 						<label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
-							<input type="text" class="form-control" placeholder="Contact">
+							<input type="text" name ="mobile" class="form-control" placeholder="Contact">
 						</div>
 					</div>
 					
 					<div class="row">
 						<div class="col mt-1">
 						<label for="exampleFormControlInput1" class="form-label">Date of Birth</label>
-							<input type="date" class="form-control" placeholder="">
+							<input type="date" name="dateofbirth" class="form-control" placeholder="">
 						</div>
 						
 					</div>
@@ -98,26 +100,27 @@
 					<div class="row">
 						<div class="col mt-1">
 						<label for="exampleFormControlInput1" class="form-label">Postal/Physical Address</label>
-							<input type="text" class="form-control" placeholder="City">
+							<input type="text" name="address" class="form-control" placeholder="City">
 						</div>
 						
 					</div>
 					<div class="row">
 						<div class="col mt-1">
 						<label for="exampleFormControlInput1" class="form-label">Email Address</label>
-							<input type="text" class="form-control" placeholder="Email">
+							<input type="text" name="email" class="form-control" placeholder="Email">
 						</div>
 						<div class="col mt-1">
 						<label for="exampleFormControlInput1" class="form-label">Password</label>
-							<input type="password" class="form-control" placeholder="Password">
+							<input type="password" name="password" class="form-control" placeholder="Password">
 						</div>
 					</div>
-				</form>
+				
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Register</button>
+				<button type="submit" class="btn btn-primary">Register</button>
 			</div>
+			</form>
 		</div>
 	</div>
 </div>
