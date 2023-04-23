@@ -11,7 +11,7 @@ public class ProductBuilder {
 	private int id;
 	private String name;
 	private String category;
-	private String price;
+	private float price;
 	private String image;
 	
 	public ProductBuilder setId(int id) {
@@ -26,7 +26,7 @@ public class ProductBuilder {
 		this.category = category;
 		return this;
 	}
-	public ProductBuilder setPrice(String price) {
+	public ProductBuilder setPrice(float price) {
 		this.price = price;
 		return this;
 	}

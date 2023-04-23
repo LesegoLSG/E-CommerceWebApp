@@ -15,8 +15,8 @@ public interface IProduct {
 	public void setName(String name);
 	public String getCategory();
 	public void setCategory(String category);
-	public String getPrice();
-	public void setPrice(String price);
+	public float getPrice();
+	public void setPrice(float price);
 	public String getImage();
 	public void setImage(String image);
 

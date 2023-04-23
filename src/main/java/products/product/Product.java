@@ -7,17 +7,17 @@ package products.product;
  * Product class- defines the product to be built
  *
  */
-public class Product {
+public class Product implements IProduct{
 	
 	private int id;
 	private String name;
 	private String category;
-	private String price;
+	private float price;
 	private String image;
 	
 	
 	
-	public Product(int id, String name, String category, String price, String image) {
+	public Product(int id, String name, String category, float price, String image) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -44,10 +44,10 @@ public class Product {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	public String getPrice() {
+	public float getPrice() {
 		return price;
 	}
-	public void setPrice(String price) {
+	public void setPrice(float price) {
 		this.price = price;
 	}
 	public String getImage() {
