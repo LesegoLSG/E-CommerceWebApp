@@ -51,7 +51,7 @@
 						<h6 class="price">Price: R<%=product.getPrice() %></h6>
 						<h6 class="Category">Category:<%=product.getCategory() %></h6>
 						<div class="mt-3 d-flex justify-content-between">
-							<a href="#" class="btn btn-primary">Add to cart</a>
+							<a href="#" class="btn btn-dark">Add to cart</a>
 							<a href="#" class="btn btn-primary">Buy now</a>
 						</div>
 						
