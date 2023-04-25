@@ -9,6 +9,7 @@ package products.product;
  */
 public class Product implements IProduct{
 	
+	
 	private int id;
 	private String name;
 	private String category;
@@ -16,6 +17,9 @@ public class Product implements IProduct{
 	private String image;
 	
 	
+	public Product() {
+		super();
+	}
 	
 	public Product(int id, String name, String category, float price, String image) {
 		super();

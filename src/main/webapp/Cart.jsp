@@ -50,15 +50,16 @@
 						<form action="" method="post" class="form-inline">
 							<input type="hidden" name="id" value="1" class="form-input">
 							<div class="form-group d-flex justify-content-between">
-								<a class="btn btn-sm btn-incre" href="#"><i
-									class="fas fa-plus-circle"></i></a> <input type="text"
-									name="quantity" class="form-control" value="1" readonly>
 								<a class="btn btn-sm btn-decre" href="#"><i
 									class="fas fa-minus-circle"></i></a>
+									<input type="text" name="quantity" class="form-control" value="1" readonly>
+								<a class="btn btn-sm btn-incre" href="#"><i
+									class="fas fa-plus-circle"></i></a> 
 							</div>
 
 						</form>
 					</td>
+					<td><a class="btn btn-sm btn-danger" href="#">Remove from list</a></td>
 				</tr>
 
 			</tbody>
