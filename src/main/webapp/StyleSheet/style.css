@@ -19,7 +19,15 @@ container-in{
 /*End of registration*/
 
 /* Start of about us page */
-
+.home-newsletter{
+	color:white;
+	background-color:#343a40;
+}
+.home-newsletter .form-control{
+	height:50px;
+	border-color:transparent;
+	border-radius:20px 0 0 20px;
+}
 
 /* End of about us page */
 

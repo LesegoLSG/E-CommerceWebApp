@@ -75,7 +75,7 @@
 	</section>
 
 	<!-- NewsLetter subscription section -->
-	<section class="home-newsletter p-2 pt-md-2 pb-md-2">
+	<section class="home-newsletter">
 		<div class="row">
 			<div class="col-12 text-center">
 				<h4>Subscribe to our Newsletter</h4>
