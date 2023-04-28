@@ -1,4 +1,10 @@
 @charset "ISO-8859-1";
+
+
+body{
+	margin:0px;
+	padding:0px;
+}
 /*Start of navbar*/
 .bg-light {
     background-color: #fcdb03!important;
@@ -11,23 +17,11 @@
     background-color: #dfe1e6!important;
 }
 
-container-in{
-	background-color:red;
-	
-}
 
 /*End of registration*/
 
 /* Start of about us page */
-.home-newsletter{
-	color:white;
-	background-color:#343a40;
-}
-.home-newsletter .form-control{
-	height:50px;
-	border-color:transparent;
-	border-radius:20px 0 0 20px;
-}
+
 
 /* End of about us page */
 

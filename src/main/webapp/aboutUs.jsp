@@ -3,9 +3,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--  
 <meta charset="ISO-8859-1">
+-->
 <title>AboutUs</title>
 <%@include file="includes/head.jsp"%>
+<style>
+body{
+margin:0px;
+padding:0px;
+width:100%;
+}
+.home-newsletter{
+	background-color:#343a40;
+	color:white;
+}
+
+.home-newsletter .row{
+	width:100%;
+}
+.home-newsletter .form-control{
+	height:50px;
+	border-color:transparent;
+	border-radius:20px 0 0 20px;
+}
+.home-newsletter .btn{
+	min-height:50px;
+	border-radius:0 20px 20px 0;
+	background-color:green;
+	color:#fff;
+}
+
+</style>
+
 </head>
 <body>
 	<!-- Navbar -->
@@ -44,7 +74,6 @@
 						ssdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 						ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 						eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-						wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 						qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 						dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
@@ -54,35 +83,25 @@
 						ssdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 						ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 						eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-						wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 						qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 						dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 					</p>
-					<p>Lorem
-						sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-						ssdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-						ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-						eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-						wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-						qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-						dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-
-					</p>
+					
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- NewsLetter subscription section -->
-	<section class="home-newsletter">
+	<section class="home-newsletter p-2 pt-md-2 pb-md-2">
 		<div class="row">
 			<div class="col-12 text-center">
 				<h4>Subscribe to our Newsletter</h4>
-				<div class="input-group p-3">
+				<div class="input-group p-1">
 					<input type="email" class="form-control"
-						placeholder="Provide us your email"> <span
-						class="input-group-btn">
+						placeholder="Provide us your email"> 
+						<span class="input-group-btn">
 						<button type="submit" class="btn btn-theme">Subscribe</button>
 					</span>
 				</div>
