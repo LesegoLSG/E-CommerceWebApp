@@ -47,7 +47,7 @@ width:100%;
 			<div class="row">
 				<div class="col-12">
 					<h2>About Us</h2>
-					<ol class="breadcrumb">
+					<ol class="breadcrumb" style="background-color:#fcdb03">
 						<li class="breadcrumb-item"><a href="index.jsp">Home</a></li>
 						<li class="breadcrumb-item active">About Us</li>
 					</ol>
@@ -121,8 +121,8 @@ width:100%;
 			</div>
 		</div>
 		<hr>
-		
-		<div class="row">
+		<!-- mr-4 to avoid a row overflow -->
+		<div class="row mr-4">
 			<div class="col-md-4 text-center">
 				<img class="img-fluid quanlities-img p-4" src="images/Logo3.png">
 				<h5>CEO</h5>
@@ -135,9 +135,9 @@ width:100%;
 				<p>Ashley aaaaa</p>
 			</div>
 			
-			<div class="col-md-4 text-center">
+			<div class="col-md-4 text-center ">
 				<img class="img-fluid quanlities-img p-4" src="images/Logo3.png">
-				<h5>CEO</h5>
+				<h5>CEOeeeeeeee</h5>
 				<p>Ashley aaaaa</p>
 			</div>
 			
