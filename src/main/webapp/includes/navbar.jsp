@@ -24,8 +24,8 @@
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active "><a class="nav-link"
 					aria-current="page" href="index.jsp"><i class="fa fa-home"></i>Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="aboutUs.jsp">About Us</a></li>
-				<li class="nav-item"><a class="nav-link" href="Cart.jsp">Cart</a></li>
+				<li class="nav-item"><a class="nav-link" href="aboutUs.jsp"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
+				<li class="nav-item"><a class="nav-link" href="Cart.jsp"><i class="fa fa-shopping-cart"></i>Cart</a></li>
 				
 				<!-- if user is not null then navbar will show Order and logout page -->
 				<% if(navAuthSession != null){ %>
@@ -34,9 +34,9 @@
 				
 				<%}else{ %>
 				<li class="nav-item"><a class="nav-link" href="#"
-					data-toggle="modal" data-target="#exampleModal">Register</a></li>
+					data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user"></i>Register</a></li>
 				<li class="nav-item active"><a class="nav-link"
-					aria-current="page" href="Login.jsp">Login</a></li>
+					aria-current="page" href="Login.jsp"><i class="fa fa-sign-in"></i>Login</a></li>
 					<%} %>
 			</ul>
 
