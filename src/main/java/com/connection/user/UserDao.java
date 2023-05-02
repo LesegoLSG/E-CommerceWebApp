@@ -48,14 +48,12 @@ public class UserDao {
 		return user;
 	}
 	
-	public int RegistrationValidation(IUser user) {
-		String insertUserToDB = "INSERT INTO user" +
-								" (firstname,lastname,gender,mobilenum,dateofbirth,address,email,password) VALUES" +
-								"(?,?,?,?,?,?,?,?);";
-		int result = 0;
+	public void RegistrationValidation(IUser user) {
+		query = "INSERT into user(firstname,lastname,gender,password,dateofbirth,address,email,mobilenum) values (?,?,?,?,?,?,?,?)";
+		
 		
 		try {
-			PreparedStatement preparedStatement = this.connection.prepareStatement(insertUserToDB);
+			preparedStatement = this.connection.prepareStatement(query);
 			//preparedStatement.setInt(1,1);
 			preparedStatement.setString(1, user.getFirstname());
 			preparedStatement.setString(2, user.getLastname());
@@ -68,14 +66,13 @@ public class UserDao {
 			
 			System.out.println("PreparedStatement: " + preparedStatement);
 			
-			result = preparedStatement.executeUpdate();
+			preparedStatement.executeUpdate();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		return result;
 	}
 	
 

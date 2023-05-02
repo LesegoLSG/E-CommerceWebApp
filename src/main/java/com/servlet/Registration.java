@@ -39,6 +39,8 @@ public class Registration extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		
+		System.out.println("Mobile: " + mobile + " Password: " + password);
+		
 		
 		//set user attributes
 		IUser newUser = new UserBuilder().setFirstname(firstname).setLastname(lastname).setGender(gender).setMobilenum(mobile)
