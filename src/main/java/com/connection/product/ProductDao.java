@@ -79,5 +79,35 @@ public class ProductDao {
 		
 	}
 	
+	/**
+	 * 
+	 * @param totalListCart- cart session arraylist
+	 * @return Total amount of items in the cart
+	 * Methods calculates the total price of all the items in a cart
+	 */
+	public float totalItemPrice(ArrayList<Cart> totalListCart) {
+		float sum = 0;
+		
+		try {
+			if(totalListCart.size() > 0)
+				for(Cart itemInList: totalListCart) {
+					query = "SELECT price from product where id=?";
+					preparedStatement = this.connection.prepareStatement(query);
+					preparedStatement.setInt(1,itemInList.getId());
+					resultSet = preparedStatement.executeQuery();
+					
+					while(resultSet.next()) {
+						sum+=resultSet.getFloat("price")*itemInList.getQuantity();
+					}
+				}
+			
+		}catch(Throwable e) {
+			e.printStackTrace();
+		}
+		
+		
+		return sum;
+	}
+	
 	
 }

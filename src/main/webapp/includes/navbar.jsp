@@ -1,6 +1,6 @@
 <%@page import="userdetails.user.*"%>
-
-
+<%@page import="products.cart.*"%>
+<%@page import="java.util.*"%>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,12 +22,16 @@
     	
     }
     %>
+    
+   
+    
+    
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active "><a class="nav-link"
 					aria-current="page" href="index.jsp"><i class="fa fa-home"></i>Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="aboutUs.jsp"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
-				<li class="nav-item"><a class="nav-link" href="Cart.jsp"><i class="fa fa-shopping-cart"></i>Cart<span class="badge badge-success">${cart_list.size()} </span></a></li>
+				<li class="nav-item"><a class="nav-link" href="Cart.jsp"><i class="fa fa-shopping-cart"></i>Cart<span class="badge badge-success">${cart_list.size()}</span></a></li>
 				
 				<!-- if user is not null then navbar will show Order and logout page -->
 				<% if(navAuthSession != null){ %>

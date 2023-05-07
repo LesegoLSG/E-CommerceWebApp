@@ -13,7 +13,10 @@
 	if(cart_list != null){
 		ProductDao productdao = new ProductDao(DBConnection.getConnection());
 		cartProduct = productdao.addProductToCart(cart_list);
+		//my code
+		float totalSum = productdao.totalItemPrice(cart_list);
 		request.setAttribute("cart_list",cart_list);
+		request.setAttribute("totalSum",totalSum);
 	}
 	%>
 
@@ -41,7 +44,7 @@
 	
 	<div class="container">
 		<div class="d-flex py-3">
-			<h3>Total Price: R562.00</h3>
+			<h3>Total Price:R ${totalSum}</h3>
 			<a class="mx-3 btn btn-primary" href="#">Check out</a>
 		</div>
 
