@@ -2,6 +2,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
       <!-- Getting session since its used in our navbar -->
+      
+      <!-- Checks if session is null and redirect -->
+	<%@include file="includes/LoginSession.jsp" %>
+     <!-- Cart Session -->
+    <%@include file="includes/CartSession.jsp" %>
     
 <!DOCTYPE html>
 <html>
@@ -26,8 +31,9 @@
 
 	
 <h1>Orders</h1>
-<!-- Checks if session is null and redirect -->
-<%@include file="includes/LoginSession.jsp" %>
+
+
+
 
 <%@include file="includes/footer.jsp" %>
 </body>

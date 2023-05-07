@@ -6,9 +6,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 	
-	<!-- Checks if session is null and redirect -->
-	<%@include file="includes/LoginSession.jsp"%>
-	
 	<!-- Getting session from addToCart servlet -->
 	<% 
 	ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
@@ -38,6 +35,9 @@
 	%>
 
 	<%@include file="includes/navbar.jsp"%>
+		<!-- Checks if session is null and redirect -->
+	<%@include file="includes/LoginSession.jsp"%>
+	
 	
 	<div class="container">
 		<div class="d-flex py-3">
@@ -85,26 +85,7 @@
 				}
 			}
 			%>
-				<tr>
-					<td>Women shoes</td>
-					<td>shoes</td>
-					<td>R450.00</td>
-
-					<td>
-						<form action="" method="post" class="form-inline">
-							<input type="hidden" name="id" value="1" class="form-input">
-							<div class="form-group d-flex justify-content-between">
-								<a class="btn btn-sm btn-decre" href="#"><i
-									class="fas fa-minus-circle"></i></a>
-									<input type="text" name="quantity" class="form-control" value="1" readonly>
-								<a class="btn btn-sm btn-incre" href="#"><i
-									class="fas fa-plus-circle"></i></a> 
-							</div>
-
-						</form>
-					</td>
-					<td><a class="btn btn-sm btn-danger" href="#">Remove from list</a></td>
-				</tr>
+				
 
 			</tbody>
 		</table>

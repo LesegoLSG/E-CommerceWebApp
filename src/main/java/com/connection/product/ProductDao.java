@@ -64,8 +64,8 @@ public class ProductDao {
 						row.setName(resultSet.getString("name"));
 						//row.setImage(resultSet.getString("image"));
 						row.setCategory(resultSet.getString("category"));
-						row.setQuantity(resultSet.getInt("quantity"));
-						row.setPrice(resultSet.getFloat("price") * item.getId());
+						row.setQuantity(item.getQuantity());
+						row.setPrice(resultSet.getFloat("price") * item.getQuantity());
 						products.add(row);
 						
 					}
