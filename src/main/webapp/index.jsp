@@ -75,8 +75,7 @@ List<IProduct> allproducts = productdao.getAllProducts();
 		</div>
 	</div>
 
-	<!-- Checks if session is null and redirect -->
-	<%@include file="includes/LoginSession.jsp"%>
+	
 
 	<%@include file="includes/footer.jsp"%>
 </body>
