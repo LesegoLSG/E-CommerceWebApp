@@ -44,7 +44,8 @@
 	
 	<div class="container">
 		<div class="d-flex py-3">
-			<h3>Total Price:R ${totalSum}</h3>
+			<!-- if there is no item in the cart totalSum=0, else totalSum= total of item(s) -->
+			<h3>Total Price:R ${(totalSum>0)?totalSum:0.00}</h3>
 			<a class="mx-3 btn btn-primary" href="#">Check out</a>
 		</div>
 
