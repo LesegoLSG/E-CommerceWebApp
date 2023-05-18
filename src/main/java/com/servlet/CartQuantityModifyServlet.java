@@ -16,7 +16,7 @@ import products.cart.Cart;
  * Servlet implementation class CartQuantityModify
  */
 @WebServlet("/CartQuantityModify")
-public class CartQuantityModify extends HttpServlet {
+public class CartQuantityModifyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
  
@@ -34,7 +34,7 @@ public class CartQuantityModify extends HttpServlet {
 			//Getting the session cart_list created from AddToCart servlet
 			ArrayList<Cart> cart_listQuantity = (ArrayList<Cart>) request.getSession().getAttribute("cart-list");
 			//Ensuring that action is not null and id > 1 for the following code to compile(id from URL)
-			if(ourAction != null && id>1) {
+			if(ourAction != null && id>=1) {
 				//Increment button functionality
 				if(ourAction.equals("increment")) {
 					for(Cart c : cart_listQuantity) {

@@ -17,7 +17,7 @@ import products.cart.Cart;
  * Servlet implementation class AddToCart
  */
 @WebServlet("/AddToCart")
-public class AddToCart extends HttpServlet {
+public class AddToCartServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
