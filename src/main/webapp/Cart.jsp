@@ -86,7 +86,7 @@
 
 						</form>
 					</td>
-					<td><a class="btn btn-sm btn-danger" href="#">Remove from list</a></td>
+					<td><a class="btn btn-sm btn-danger" href="./RemoveProductFromCartServlet?id=<%=cart.getId()%>">Remove from list</a></td>
 				</tr>
 				<% 
 				}
