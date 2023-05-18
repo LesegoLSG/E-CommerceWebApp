@@ -13,7 +13,7 @@
 	if(cart_list != null){
 		ProductDao productdao = new ProductDao(DBConnection.getConnection());
 		cartProduct = productdao.addProductToCart(cart_list);
-		//my code
+		//Getting the total sum of all products and create a session for it.
 		float totalSum = productdao.totalItemPrice(cart_list);
 		request.setAttribute("cart_list",cart_list);
 		request.setAttribute("totalSum",totalSum);
@@ -75,11 +75,12 @@
 							<input type="hidden" name="id" value="<%=cart.getId() %>" class="form-input">
 							<div class="form-group d-flex justify-content-between">
 							<!-- Calling CartQuantityModify during button decrease click event -->
-								<a class="btn btn-sm btn-decre" href="./CartQuantityModify"><i
+								<a class="btn btn-sm btn-decre" href="./CartQuantityModify?action=decrement&id=<%=cart.getId() %>"><i
 									class="fas fa-minus-circle"></i></a>
-									<input type="text" name="quantity" class="form-control" value="1" readonly>
+									<!-- Making quantity dynamic -->
+									<input type="text" name="quantity" class="form-control" value="<%= cart.getQuantity() %>" readonly>
 										<!-- Calling CartQuantityModify during button increase click event -->
-								<a class="btn btn-sm btn-incre" href="./CartQuantityModify"><i
+								<a class="btn btn-sm btn-incre" href="./CartQuantityModify?action=increment&id=<%=cart.getId() %>"><i
 									class="fas fa-plus-circle"></i></a> 
 							</div>
 
