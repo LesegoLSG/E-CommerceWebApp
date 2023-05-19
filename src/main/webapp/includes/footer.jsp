@@ -92,6 +92,9 @@
 						<li class="list-inline-item">
 							<a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="fab fa-youtube"></i></a>
 						</li>
+							<li class="list-inline-item">
+							<a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="fab fa-whatsapp"></i></a>
+						</li>
 					</ul>
 				</div>
 			</div>
