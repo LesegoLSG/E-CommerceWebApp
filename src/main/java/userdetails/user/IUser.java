@@ -11,6 +11,8 @@ public interface IUser {
 	public String getMobilenum();
 	public String getDOB();
 	public String getAddress();
+	public String getRole();
+	public String getRegistrationDate();
 	
 	public void setId(int id);
 	public void setFirstname(String firstname);
@@ -21,6 +23,10 @@ public interface IUser {
 	public void setMobilenum(String mobilenum);
 	public void setDOB(String dOB);
 	public void setAddress(String address);
+	public void setRole(String role);
+	public void setRegistrationDate(String registrationDate);
+	
+	
 	
 	public String toString();
 }

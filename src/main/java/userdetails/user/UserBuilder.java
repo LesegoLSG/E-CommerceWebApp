@@ -11,11 +11,15 @@ public class UserBuilder {
 	private String mobilenum;
 	private String DOB;
 	private String address;
+	private String role;
+	private String registrationDate;
 	
 	public UserBuilder setId(int id) {
 		this.id = id;
 		return this;
 	}
+
+	
 	public UserBuilder setFirstname(String firstname) {
 		this.firstname = firstname;
 		return this;
@@ -52,8 +56,20 @@ public class UserBuilder {
 		return this;
 	}
 	
+	
+	public UserBuilder setRole(String role) {
+		this.role = role;
+		return this;
+	}
+	
+	public UserBuilder setRegistrationDate(String registrationDate) {
+		this.registrationDate = registrationDate;
+		return this;
+	}
+	
+	
 	public User getUser() {
-		return new User(id,firstname,lastname,gender,email,mobilenum,password,DOB,address);
+		return new User(id,firstname,lastname,gender,email,mobilenum,password,DOB,address,role,registrationDate);
 	}
 	
 }

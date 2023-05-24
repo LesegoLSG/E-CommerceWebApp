@@ -23,15 +23,20 @@ public class User implements IUser{
 	
 	private String address;
 	
+	private String role;
+	
+	private String registrationDate;
+	
 	
 
+	
 	//Augument less constructor
 	public User() {
 		super();
 	}
 	//Constructor with fields
 	public User(int id, String firstname, String lastname, String gender, String email, String password,
-			 String mobilenum,String DOB,String address) {
+			 String mobilenum,String DOB,String address,String role,String registrationDate) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -42,6 +47,8 @@ public class User implements IUser{
 		this.mobilenum = mobilenum;
 		this.DOB = DOB;
 		this.address = address;
+		this.role = role;
+		this.registrationDate = registrationDate;
 	}
 	
 	//Getters
@@ -117,6 +124,19 @@ public class User implements IUser{
 	
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	public String getRegistrationDate() {
+		return registrationDate;
+	}
+	public void setRegistrationDate(String registrationDate) {
+		this.registrationDate = registrationDate;
 	}
 
 	@Override
