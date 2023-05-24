@@ -29,13 +29,13 @@
 		class="container min-vh-100 d-flex justify-content-center align-items-center">
 		<div class="row">
 			<div class="col">
-				<button type="button" class="btn">Users</button>
+				<a type="button" class="btn text-center" href="Users.jsp">Users</a>
 			</div>
 			<div class="col">
-				<button type="button" class="btn">Products</button>
+				<a type="button" class="btn text-center" href="#">Products</a>
 			</div>
 			<div class="col">
-				<button type="button" class="btn">Orders</button>
+				<a type="button" class="btn text-center" href="#">Orders</a>
 			</div>
 
 		</div>
