@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.connection.DBConnection;
 import com.connection.user.UserDao;
 
-import userdetails.user.IUser;
+import userdetails.user.ICustomer;
 import userdetails.user.UserBuilder;
 
 /**
@@ -43,7 +43,7 @@ public class Registration extends HttpServlet {
 		
 		
 		//set user attributes
-		IUser newUser = new UserBuilder().setFirstname(firstname).setLastname(lastname).setGender(gender).setMobilenum(mobile)
+		ICustomer newUser = new UserBuilder().setFirstname(firstname).setLastname(lastname).setGender(gender).setMobilenum(mobile)
 						.setDOB(dateofbirth).setAddress(address).setEmail(email).setPassword(password).getUser();
 		
 		try {

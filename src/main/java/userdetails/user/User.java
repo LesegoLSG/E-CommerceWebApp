@@ -3,7 +3,7 @@ package userdetails.user;
 
 
 
-public class User implements IUser{
+public class User implements ICustomer{
 	//Attributes
 	private int id;
 	

@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import userdetails.user.IUser;
+import userdetails.user.ICustomer;
 import userdetails.user.User;
 import userdetails.user.UserBuilder;
 /**
@@ -26,10 +26,10 @@ public class UserDao {
 		this.connection = connection;
 	}
 	
-	public IUser LoginValidation(String email, String password) {
-		IUser user = null;
+	public ICustomer LoginValidation(String email, String password) {
+		ICustomer user = null;
 		try {
-			query = "select * from user where email=? and password=?";
+			query = "select * from customer where email=? and password=?";
 			preparedStatement = this.connection.prepareStatement(query);
 			preparedStatement.setString(1, email);
 			preparedStatement.setString(2, password);
@@ -48,8 +48,8 @@ public class UserDao {
 		return user;
 	}
 	
-	public void RegistrationValidation(IUser user) {
-		query = "INSERT into user(firstname,lastname,gender,password,dateofbirth,address,email,mobilenum) values (?,?,?,?,?,?,?,?)";
+	public void RegistrationValidation(ICustomer user) {
+		query = "INSERT into customer(firstname,lastname,gender,password,dateofbirth,address,email,mobilenum) values (?,?,?,?,?,?,?,?)";
 		
 		
 		try {

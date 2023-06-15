@@ -24,11 +24,13 @@
 		</button>
 		<!-- Getting session since its used in our navbar -->
 		<%
-		IUser navAuthSession = (IUser) request.getSession().getAttribute("auth");
-		if (navAuthSession != null) {
+		
+
+				ICustomer navAuthSession = (ICustomer) request.getSession().getAttribute("auth");
+				if (navAuthSession != null) {
 			request.setAttribute("auth", navAuthSession);
 
-		}
+				}
 		%>
 
 

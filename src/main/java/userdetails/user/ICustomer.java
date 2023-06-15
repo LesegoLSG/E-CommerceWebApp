@@ -1,6 +1,6 @@
 package userdetails.user;
 
-public interface IUser {
+public interface ICustomer {
 	
 	public int getId();
 	public String getFirstname();

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import com.connection.DBConnection;
 import com.connection.user.UserDao;
 
-import userdetails.user.IUser;
+import userdetails.user.ICustomer;
 
 /**
  * Servlet implementation class LoginServlet
@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 			
 			try {
 				UserDao userdao = new UserDao(DBConnection.getConnection());
-				IUser user = userdao.LoginValidation(email, password);
+				ICustomer user = userdao.LoginValidation(email, password);
 				
 				if(user != null) {
 					//set session
